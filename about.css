@@ -596,7 +596,7 @@ body{
     }
 
     .facilities-fac{
-        top: 650px;
+        top: 680px;
         height: 730px;
     }
 
@@ -1106,7 +1106,7 @@ body{
 
 @media screen and (max-width:501px) {
     .footer-segment{
-        top: 1580px;
+        top: 1610px;
         height: 450px;
     }
     
