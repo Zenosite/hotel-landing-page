@@ -723,7 +723,7 @@ body{
     #detail1{
         top: 910px;
         width: 300px;
-        font-size: 12px;
+        font-size: 11.6px;
     }
 
     #read_more{
@@ -1136,6 +1136,7 @@ body{
         width: 250px;
         left: 10px;
         top: 285px;
+        font-size: 12px;
     }
     
     #read_more1{
@@ -2601,7 +2602,7 @@ body{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 160%;
     
         text-align: justify;
