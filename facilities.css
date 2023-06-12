@@ -682,7 +682,7 @@ body{
     }
 
     .facilities-fac{
-        top: 590px;
+        top: 640px;
         height: 540px;
     }
 
@@ -738,7 +738,7 @@ body{
     }
 
     .facilities-segment-2{
-        top: 1290px;
+        top: 1340px;
     }
 
     #read_more{
@@ -1197,7 +1197,7 @@ body{
 
 @media screen and (max-width:501px) {
     .footer-segment{
-        top: 2420px;
+        top: 2550px;
         height: 450px;
     }
     
