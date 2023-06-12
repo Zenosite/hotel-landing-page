@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservation.css">
+    <script defer src="reservation.js"></script>
+</head>
+<body>
+    <!-- ------------------------------------------------------ Header --------------------------------------------------------- -->
+    <header>
+        <div class = "header_navbar">
+            <div class="line"></div>
+            <img class = "logo" src="./Document/Logo2.png" alt="Logo">
+            <h1 id = "vhotel">VhoTel</h1>
+            <nav class = "navbar">
+                <a href="home.html" id="home"> <span class="hovering">Home</span> </a>
+                <a href="about.html" id="aboutus"><span class="hovering">About Us</span></a>
+                <a href="rooms.html" id="rooms"><span class="hovering">Rooms</span></a>
+                <a href="facilities.html" id="facilities"><span class="hovering">Facilities</span></a>
+                <a href="reservation.html" id="reservation"><span class="selected">Reservation</span></a>
+            </nav>
+            <button class="headerbtn" id="book_now">BOOK NOW</button>
+        </div>
+        <div class="background-header"></div>
+        <div class="image-header">
+            <img src="./Document/Home-Bedroom-1.jpg" alt="">
+        </div>
+
+        <div class="header-title">
+            <div class="line2">Reservation</div>
+        </div>
+    </header>
+
+    <!-- ------------------------------------------------------ Reservation --------------------------------------------------------- -->
+
+    <div class="center">
+        <div class="form">
+            <div class="form-container">
+                <div class="center">
+                    <div class="top-title-form">
+                        <div class="title2">HOTEL</div>
+                        <div>Reservation</div>
+                    </div>
+                </div>
+
+                <form class="fill-form" onsubmit="submit_form(event)">
+                    <div class="inputbox smallbox first-name">
+                        <input id="first-name" type="text" required="">
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputbox smallbox last-name">
+                        <input id="last-name" type="text" required="">
+                        <span>Last Name</span>
+                    </div>
+
+                    <div class="inputbox largebox email">
+                        <input id="email" type="text" required="">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputbox largebox phonenum">
+                        <input id="number" type="text" required="">
+                        <span>Phone Number</span>
+                    </div>
+
+                    <div class="inputbox largebox check-in">
+                        <input id="checkin" type="text" required="">
+                        <span>Check-In (DD/MM/YYYY)</span>
+                    </div>
+                    <div class="inputbox largebox check-out">
+                        <input id="checkout" type="text" required="">
+                        <span>Check-Out (DD/MM/YYYY)</span>
+                    </div>
+
+                    <div class="inputbox smallbox adult">
+                        <input id="adult" type="text" required="">
+                        <span>Adult</span>
+                    </div>
+                    <div class="inputbox smallbox children">
+                        <input id="children" type="text" required="">
+                        <span>Children</span>
+                    </div>
+
+                    <div class="inputbox custombox">
+                        <input id="qty" type="text" required="">
+                        <span>Qty.</span>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button">Select Room
+                            <span class="arrow"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Deluxe Suite</li>
+                            <li class="dropdown-item">Deluxe Suite Bundaran HI View</li>
+                            <li class="dropdown-item">Grand Deluxe Suite</li>
+                            <li class="dropdown-item">Grand Deluxe Suite Bundaran View</li>
+                            <li class="dropdown-item">Luxurious Suite</li>
+                            <li class="dropdown-item">Luxurious Suite Bundaran HI View</li>
+                        </ul>
+                    </div>
+
+                    <div class="center">
+                        <div class="bottom-footer">
+                            <div class="error-warning" id="color-error">*error</div>
+                            <button class="viewallroombtn" id="view_all_room" type="submit" value="confirm">Check Availability</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="carousel-container">
+            <div class="center">
+                <div class="top-title-form">
+                    <div class="title2">Gallery</div>
+                    <div>Discover Our Hotel</div>
+                </div>
+            </div>
+    
+    
+            <div class="carousel">
+                <button class="carousel-button --left hide">
+                    <img src="./Document/Left.png" alt="">
+                </button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/Room-additional-1.jpeg" alt="">
+                        </li><li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/Home-Bedroom-1.jpg" alt="">
+                        </li><li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/Home-Bedroom-3.jpg" alt="">
+                        </li><li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/Additional-room-2.jpg" alt="">
+                        </li><li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/3 Bedrooms.jpg" alt="">
+                        </li><li class="carousel-slide current">
+                            <img class="carousel-image" src="./Document/Luxurious-Suite-Bundaran-View-6.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button --right hide">
+                    <img src="./Document/Right.png" alt="">
+                </button>
+        
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+    
+            <div class="center">
+                <div class="bottom-title">Deluxe Suite</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------ Footer --------------------------------------------------------- -->
+
+    <footer class="footer-segment">
+        <div id="rectangle1"></div>
+        <div class="center">
+            <img id="footer-logo" src="./Document/Logo2.png" alt="">
+
+            <div class="footer-description-1">
+                <img id="footer-location" src="./Document/Location.png" alt="">
+                <div id="footer-text">Jalan M.H. Thamrin Kav. 28-30 Jakarta, Indonesia</div>
+            </div>
+
+            <div class="footer-description-2">
+                <img id="footer-phone" src="./Document/Phone Icon.png" alt="">
+                <div id="footer-text">+62 123 456 7890</div>
+            </div>
+
+            <div class="footer-description-3">
+                <img id="footer-email" src="./Document/Mail.png" alt="">
+                <div id="footer-text">vhotel@vhotel.com</div>
+            </div>
+
+            <div class="footer-data-1">
+                <div id="header-data">Page Site</div>
+                <div id="footer-data-text-1">Gallery</div>
+                <div id="footer-data-text-2">Promotion</div>
+                <div id="footer-data-text-3">Event</div>
+                <div id="footer-data-text-4">Customer Service</div>
+            </div>
+
+            <div class="footer-data-2">
+                <div id="header-data">About</div>
+                <div id="footer-data-text-1">About Us</div>
+                <div id="footer-data-text-2">Contact</div>
+                <div id="footer-data-text-3">Rooms</div>
+            </div>
+
+            <div class="footer-data-3">
+                <div id="header-data">Follow</div>
+                <div id="footer-data-text-1">Socials</div>
+                <img id="facebook-logo" src="./Document/Facebook.png" alt="">
+                <img id="instagram-logo" src="./Document/Instagram.png" alt="">
+                <img id="youtube-logo" src="./Document/Youtube.png" alt="">
+                <img id="twitter-logo" src="./Document/Twitter.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+</body>
+</html>

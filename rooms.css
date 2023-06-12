@@ -1,0 +1,1400 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.centertemp {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(621px, 1fr));
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+/* ------------------------------- Header CSS --------------------------------- */
+
+.logo{
+    position: absolute;
+    width: 96px;
+    height: 76px;
+    left: 8px;
+    top: 1px;
+}
+
+.header_navbar{
+    position: absolute;
+    width: 100%;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #000000 21.96%, rgba(0, 0, 0, 0) 100%);
+}
+
+.navbar{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+#home{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#home:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+#aboutus{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#aboutus:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+
+#rooms{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#rooms:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#facilities{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#facilities:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#reservation{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#reservation:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#vhotel{
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    left: 99px;
+    top: 1px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.headerbtn{
+    position: absolute;
+    right: 2%;
+    top: 14px;
+    text-align: center;
+}
+
+#book_now{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    background-color: #D58D32;
+    border: 2px solid #D58D32;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out 0s;
+    z-index: 1;
+}
+
+#book_now::before{
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #FFFFFF;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+#book_now:hover{
+    color: #D58D32; 
+}
+
+#book_now:hover::before{
+    transform: scaleX(1);
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 77px;
+
+    border: 1px solid #868686;
+    transform: rotate(0deg);
+}
+
+.background-header{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 610px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+}
+
+.image-header {
+    z-index: -1;
+    position: relative;
+    width: 100%; 
+    height: 610px;
+    overflow: hidden;
+  }
+  
+.image-header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.selected {
+    position: relative;
+  }
+  
+.selected::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+
+.hovering:hover {
+    position: relative;
+    transition: 0.3s all ease-in-out 0s;
+  }
+  
+.hovering:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+
+#trash_input{
+    opacity: 0;
+}
+
+#highlight{
+    color: #F19825
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.line2{
+    position: absolute;
+    width: 928px;
+    height: 343px;
+    top: 170px;
+    margin-left: -1050px;
+
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 160%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.line3{
+    position: absolute;
+    width: 645px;
+    height: 125px;
+    top: 305px;
+    margin-left: -600px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+.header-new-image{
+    position: absolute;
+    top: 200px;
+    margin-left: 150px;
+}
+
+.header-box{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 515px;
+    height: 283px;
+
+    border: 2px solid #D58D32;
+}
+
+.header-new-image-1 {
+    position: absolute;
+    width: 515px;
+    height: 290px;
+    margin-left: 20px;
+    top: -25px;
+
+    overflow: hidden;
+  }
+  
+.header-new-image-1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1270px) {
+    .background-header{
+        height: 730px;
+    }
+    
+    .image-header {
+        height: 730px;
+      }
+    .header-new-image{
+        top: 150px;
+        margin-left: -550px;
+    }
+    .line2{
+        top: 450px;
+        margin-left: -320px;
+    }
+    
+    .line3{
+        top: 560px;
+        margin-left: 0px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #vhotel{
+        display: none;
+    }
+    .headerbtn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .background-header{
+        height: 630px;
+    }
+    
+    .image-header {
+        height: 630px;
+      }
+    .header-new-image{
+        top: 150px;
+        margin-left: -550px;
+    }
+    .line2{
+        top: 370px;
+        margin-left: -270px;
+        font-size: 70px;
+    }
+    
+    .line3{
+        top: 470px;
+        width: 430px;
+        font-size: 16px;
+    }
+
+    .header-new-image{
+        top: 150px;
+        margin-left: -430px;
+    }
+    
+    .header-box{
+        width: 400px;
+        height: 230px;
+    }
+    
+    .header-new-image-1 {
+        width: 400px;
+        height: 230px;
+        margin-left: 20px;
+        top: -25px;
+      }
+}
+
+@media screen and (max-width:670px) {
+    #home{
+        margin-left: 55px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #aboutus{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #rooms{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #facilities{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #reservation{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .logo{
+        display: none;
+    }
+
+    .line2{
+        top: 340px;
+        margin-left: -150px;
+        font-size: 50px;
+    }
+    
+    .line3{
+        top: 420px;
+        width: 280px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .header-new-image{
+        top: 140px;
+        margin-left: -280px;
+    }
+    
+    .header-box{
+        width: 280px;
+        height: 180px;
+    }
+    
+    .header-new-image-1 {
+        width: 280px;
+        height: 180px;
+        margin-left: 10px;
+        top: -10px;
+      }
+
+    #home{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .navbar{
+        font-size: 12px;
+    }
+}
+
+/* -------------------------------- Rooms -------------------------------- */
+
+.container-room-1{
+    height: auto; 
+    margin: 30px;
+    flex: 1;
+}
+
+.container-room{
+    width: 621px;
+    height: 660px;
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.container-room-opened{
+    width: 621px;
+    height: 925px;
+    position: relative;
+}
+
+.room-picture {
+    position: relative;
+    width: 621px;
+    height: 290px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.room-picture img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bold-text{
+    font-weight: 700;
+}
+
+#text-1{
+    position: relative;
+    width: 207px;
+    height: 43px;
+    left: 15px;
+    top: 10px;
+
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+
+    color: #191825;
+}
+
+#text-2{
+    position: relative;
+    width: 302px;
+    height: 32px;
+    left: 15px;
+    top: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+
+    text-align: justify;
+
+    color: #191825;
+}
+
+#text-3{
+    position: relative;
+    width: 572px;
+    height: 174px;
+    left: 15px;
+    top: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+
+    text-align: justify;
+
+    color: rgba(25, 24, 37, 0.75);
+}
+
+.dropdown{
+    position: relative;
+    top: -10px;
+    left: -25px;
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.q{
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.q:hover,
+.q.hover .arrow{
+    border-left-color: #0569ff;
+}
+
+.arrow{
+    display: inline-block;
+    margin-bottom: 2px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #000000;
+    border-bottom: 8px solid transparent;
+    transition: 0.3s;
+}
+
+.dropdown p{
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.a{
+    overflow: hidden;
+    height: 0;
+    margin-left: -70px;
+    margin-top: -40px;
+}
+
+.a-opened{
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+
+.arrow-rotated{
+    transform: rotate(90deg);
+}
+
+#bullet-point{
+    margin-bottom: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: justify;
+
+    color: rgba(25, 24, 37, 0.75);
+}
+
+#facilities-title{
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+
+    color: #191825;
+}
+
+.booknowbtn1{
+    position: absolute;
+    right: 2%;
+    top: 30px;
+    text-align: center;
+}
+
+.booknowbtn1-after{
+    top: -50px;
+}
+
+#book_now1{
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 70%;
+    text-align: center;
+    color: #191825;
+
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin-left:25px;
+    box-shadow: 0px 3px 4px 2px rgba(190, 137, 70, 0.5);
+    border-radius: 6px;
+
+    background-color: #D58D32;
+    border: 1px solid #D58D32;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.0s all ease-in-out 0s;
+    z-index: 1;
+}
+
+#book_now1::before{
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    transition: transform 000ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #FFFFFF;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+#book_now1:hover{
+    color: #D58D32; 
+}
+
+#book_now1:hover::before{
+    transform: scaleX(1);
+}
+
+@media screen and (max-width:768px) {
+    .container-room-1{
+        margin: 10px;
+    }
+    .container-room{
+        width: 480px;
+        height: 640px;
+    }
+    
+    .container-room-opened{
+        width: 480px;
+        height: 860px;
+    }
+
+    .arrow{
+        margin-bottom: 0px;
+        border-top: 8px solid transparent;
+        border-left: 15px solid #000000;
+        border-bottom: 8px solid transparent;
+    }
+    
+    #bullet-point{
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+    }
+    
+    #facilities-title{
+        font-size: 23px;
+    }
+
+    .room-picture {
+        width: 480px;
+        height: 290px;
+    }
+    
+    #text-1{
+        width: 207px;
+        height: 43px;
+        left: 15px;
+        top: 10px;
+        font-size: 30px;
+    }
+    
+    #text-2{
+        width: 280px;
+        height: 32px;
+        left: 15px;
+        top: 5px;
+        font-size: 18px;
+    }
+    
+    #text-3{
+        width: 430px;
+        height: 163px;
+        left: 15px;
+        top: 5px;
+        font-size: 16px;
+    }
+
+    #book_now1{
+        font-size: 20px;
+        line-height: 0%;
+    
+        width: 140px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .centertemp {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+        justify-items: center;
+    }
+    .container-room{
+        width: 300px;
+        height: 520px;
+    }
+    
+    .container-room-opened{
+        width: 300px;
+        height: 740px;
+    }
+
+    .arrow{
+        margin-bottom: 0px;
+        border-top: 8px solid transparent;
+        border-left: 15px solid #000000;
+        border-bottom: 8px solid transparent;
+    }
+    
+    #bullet-point{
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+    }
+    
+    #facilities-title{
+        font-size: 23px;
+    }
+
+    .room-picture {
+        width: 300px;
+        height: 170px;
+    }
+    
+    #text-1{
+        width: 207px;
+        height: 43px;
+        left: 15px;
+        top: 10px;
+        font-size: 24px;
+    }
+    
+    #text-2{
+        width: 280px;
+        height: 32px;
+        left: 15px;
+        top: 5px;
+        font-size: 15px;
+    }
+    
+    #text-3{
+        width: 270px;
+        height: 163px;
+        left: 15px;
+        top: 5px;
+        font-size: 13px;
+    }
+
+    #book_now1{
+        font-size: 15px;
+        line-height: 0%;
+        left: -10px;
+    
+        width: 120px;
+        height: 30px;
+    }
+
+    .booknowbtn1{
+        position: absolute;
+        right: 2%;
+        top: 40px;
+        text-align: center;
+    }
+    
+    .booknowbtn1-after{
+        top: -40px;
+    }
+}
+
+/* -------------------------------- Footer -------------------------------- */
+
+.footer-segment{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    left: 0px;
+    top: 30px;
+
+    background: #313131;
+}
+
+#rectangle1{
+    width: 100%;
+    height: 14px;
+    left: 0px;
+    top: 5630px;
+
+    background: rgba(213, 141, 50, 0.5);
+}
+
+#footer-logo{
+    position: absolute;
+    width: 367px;
+    height: 291px;
+    margin-left: -1000px;
+    top: 45px;
+}
+
+.footer-description-1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 70px;
+}
+
+.footer-description-2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 150px;
+}
+
+.footer-description-3{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 220px;
+}
+
+#footer-location{
+    position: absolute;
+    width: 18px;
+    height: 27px;
+}
+
+#footer-phone{
+    position: absolute;
+    width: 23px;
+    height: 25px;
+}
+
+#footer-email{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+#footer-text{
+    position: absolute;
+    width: 235px;
+    height: 44px;
+    left: 35px;
+    top: 3px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.footer-data-1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 220px;
+    top: 60px;
+}
+
+.footer-data-2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 650px;
+    top: 60px;
+}
+
+.footer-data-3{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 1060px;
+    top: 60px;
+}
+
+#header-data{
+    position: absolute;
+    width: 138px;
+    height: 34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #C6975E;
+}
+
+#footer-data-text-1{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-2{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 110px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-3{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 160px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-4{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 210px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#facebook-logo{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: -8px;
+    top: 105px;
+}
+
+#instagram-logo{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 50px;
+    top: 114px;
+}
+
+#youtube-logo{
+    position: absolute;
+    width: 46px;
+    height: 32px;
+    left: 100px;
+    top: 116px;
+}
+
+#twitter-logo{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 160px;
+    top: 113px;
+}
+
+@media screen and (max-width:1326px) {
+    .footer-segment{
+        top: 30px;
+    }
+}
+@media screen and (max-width:1275px) {
+    .footer-segment{
+        top: 30px;
+    }
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        margin-left: -830px;
+    }
+    
+    .footer-description-2{
+        margin-left: -830px;
+    }
+    
+    .footer-description-3{
+        margin-left: -830px;
+    }
+/*     
+    #footer-location{
+        position: absolute;
+        width: 18px;
+        height: 27px;
+    }
+    
+    #footer-phone{
+        position: absolute;
+        width: 23px;
+        height: 25px;
+    }
+    
+    #footer-email{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+    } */
+    
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 800px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .footer-segment{
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        margin-left: -830px;
+    }
+    
+    .footer-description-2{
+        margin-left: -830px;
+    }
+    
+    .footer-description-3{
+        margin-left: -830px;
+    }
+/*     
+    #footer-location{
+        position: absolute;
+        width: 18px;
+        height: 27px;
+    }
+    
+    #footer-phone{
+        position: absolute;
+        width: 23px;
+        height: 25px;
+    }
+    
+    #footer-email{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+    } */
+    
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 800px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:1056px) {
+    .footer-segment{
+        height: 550px;
+    }
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        display: none;
+    }
+    
+    .footer-description-2{
+        display: none;
+    }
+    
+    .footer-description-3{
+        display: none;
+    }
+
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 340px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-segment{
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .footer-segment{
+        top: 30px;
+        height: 450px;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -40px;
+        top: 30px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 300px;
+        top: 30px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -40px;
+        top: 240px;
+    }
+
+    #header-data{
+    font-size: 21px;
+    }
+
+    #footer-data-text-1{
+        top: 40px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-2{
+        top: 75px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-3{
+        top: 115px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-4{
+        top: 155px;
+        font-size: 15px;
+    }
+
+    #facebook-logo{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: -5px;
+        top: 75px;
+    }
+    
+    #instagram-logo{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 35px;
+        top: 80px;
+    }
+    
+    #youtube-logo{
+        position: absolute;
+        width: 30px;
+        height: 23px;
+        left: 73px;
+        top: 81px;
+    }
+    
+    #twitter-logo{
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        left: 115px;
+        top: 78px;
+    }
+}

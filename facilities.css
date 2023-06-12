@@ -1,0 +1,1282 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------- Header CSS --------------------------------- */
+
+.logo{
+    position: absolute;
+    width: 96px;
+    height: 76px;
+    left: 8px;
+    top: 1px;
+}
+
+.header_navbar{
+    position: absolute;
+    width: 100%;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #000000 21.96%, rgba(0, 0, 0, 0) 100%);
+}
+
+.navbar{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+#home{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#home:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+#aboutus{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#aboutus:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+
+#rooms{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#rooms:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#facilities{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+
+
+#reservation{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+#reservation:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#vhotel{
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    left: 99px;
+    top: 1px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.headerbtn{
+    position: absolute;
+    right: 2%;
+    top: 14px;
+    text-align: center;
+}
+
+#book_now{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    background-color: #D58D32;
+    border: 2px solid #D58D32;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out 0s;
+    z-index: 1;
+}
+
+#book_now::before{
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #FFFFFF;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+#book_now:hover{
+    color: #D58D32; 
+}
+
+#book_now:hover::before{
+    transform: scaleX(1);
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 77px;
+
+    border: 1px solid #868686;
+    transform: rotate(0deg);
+}
+
+.background-header{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+}
+
+.image-header {
+    z-index: -1;
+    position: relative;
+    width: 100%; 
+    height: 260px;
+    overflow: hidden;
+  }
+  
+.image-header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.selected {
+    position: relative;
+  }
+  
+.selected::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+
+.hovering:hover {
+    position: relative;
+    transition: 0.3s all ease-in-out 0s;
+  }
+  
+.hovering:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+
+#trash_input{
+    opacity: 0;
+}
+
+#highlight{
+    color: #F19825
+}
+
+
+@media screen and (max-width: 840px) {
+    #vhotel{
+        display: none;
+    }
+    .headerbtn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:670px) {
+    #home{
+        margin-left: 55px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #aboutus{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #rooms{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #facilities{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    #reservation{
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .logo{
+        display: none;
+    }
+
+    #home{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .navbar{
+        font-size: 12px;
+    }
+}
+
+/* -------------------------------- Facilities -------------------------------- */
+.facilities-title{
+    position: absolute;
+    width: 377px;
+    height: 108px;
+    top: 20px;
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 160%;
+    text-align: center;
+
+    color: #000000;
+}
+
+.facilities-segment-1{
+    position: absolute;
+    width: 100%;
+    height: 940px;
+    top: 260px;
+
+    background:#fff;
+    z-index: -1;
+}
+
+.facilities-segment-2{
+    position: absolute;
+    width: 100%;
+    height: 940px;
+    top: 1300px;
+
+    background:none;
+    z-index: -1;
+}
+
+#restaurant-1{
+    left: 15px;
+    top: 13px;
+    object-fit: cover;
+    position: absolute;
+    width: 614px;
+    height: 354px;
+    border-radius: 25px 0px;
+}
+
+.restaurant-img{
+    width: 640px;
+    height: 434px;
+    top: 55px;
+    position: absolute;
+    margin-left: 640px;
+
+    background:none;
+}
+
+.restaurant-text{
+    width: 600px;
+    height: 424px;
+    top: 95px;
+    margin-left: -645px;
+    position: absolute;
+
+    background:none;
+}
+
+#box3{
+    position: absolute;
+    left: 220px;
+    top: 0px;
+
+    background: none;
+    box-sizing: border-box;
+    width: 422px;
+    height: 292px;
+
+    border: 2px solid #D58D32;
+}
+
+#box4{
+    position: absolute;
+
+    left: 0px;
+    top: 115px;
+
+    background: none;
+    box-sizing: border-box;
+
+    width: 435px;
+    height: 266px;
+
+    border: 2px solid #D58D32;
+}
+
+#restaurant-title{
+    position: absolute;
+    width: 590px;
+    height: 53px;
+
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+
+    color: #191825;
+}
+
+#restaurant-detail{
+    position: absolute;
+    width: 600px;
+    height: 53px;
+    top: 45px;
+
+    font-family: 'Inter';  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: justify;
+
+    color: rgba(25, 24, 37, 0.75);
+
+    color: #191825;
+}
+
+.facilities-fac{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 660px;
+    width: 100%;
+    height: 500px;
+    background: rgba(245, 243, 240, 0.8);
+}
+
+.restaurant{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 130px;
+}
+
+.facilities-img{
+    width: 640px;
+    height: 434px;
+    position: absolute;
+    margin-left: -640px;
+    top: 70px;
+
+    background:none;
+}
+
+.facilities-text{
+    width: 640px;
+    height: 424px;
+    margin-left: 720px;
+    position: absolute;
+    top: 90px;
+
+    background:none;
+}
+
+.readmorebtn{
+    position: absolute;
+    top: 14px;
+    text-align: center;
+}
+
+#read_more{
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0%;
+    color: #191825;
+
+    position: relative;
+    width: 200px;
+    height: 40px;
+    top: 5px;
+    left: 400px;
+    box-shadow: 0px 3px 4px 2px rgba(190, 137, 70, 0.5);
+    border-radius: 6px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #D58D32;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #D58D32;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out 0s;
+    z-index: 1;
+}
+
+#read_more::before{
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+    background-color: #D58D32;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+#read_more:hover{
+    color: #FFFFFF; 
+}
+
+#read_more:hover::before{
+    transform: scaleY(1);
+}
+
+@media screen and (max-width:1300px) {
+    .restaurant-img{
+        top: 55px;
+        margin-left: 0px;
+        width: 650px;
+    }
+    
+    .restaurant-text{
+        top: 460px;
+        margin-left: 0px;
+    }
+
+    #restaurant-detail{
+        width: 550px;
+    }
+
+    .facilities-fac{
+        top: 920px;
+        height: 840px;
+    }
+
+    .facilities-img{
+        top: 40px;
+        margin-left: 0px;
+        width: 650px;
+    }
+    
+    .facilities-text{
+        margin-left: 30px;
+        top: 460px;
+    }
+
+    .facilities-segment-2{
+        top: 1900px;
+    }
+
+    #read_more{
+        font-size: 24px;
+    
+        width: 200px;
+        height: 40px;
+        top: 5px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .restaurant-img{
+        top: 0px;
+        margin-left: 185px;
+    }
+    
+    .restaurant-text{
+        top: 320px;
+        margin-left: 155px;
+    }
+
+    #restaurant-detail{
+        width: 550px;
+    }
+
+    .facilities-fac{
+        top: 700px;
+        height: 640px;
+    }
+
+    .facilities-img{
+        top: 40px;
+        margin-left: 190px;
+    }
+    
+    .facilities-text{
+        margin-left: 190px;
+        top: 360px;
+    }
+
+    #restaurant-1{
+        width: 430px;
+        height: 280px;
+        left: 10px;
+        top: 10px;
+    }
+    
+    #box3{
+        position: absolute;
+        width: 304px;
+        height: 214px;
+        left: 145px;
+    }
+    
+    #box4{
+        position: absolute;
+        width: 300px;
+        height: 214px;
+        left: 0px;
+        top: 85px;
+    }
+    
+    #restaurant-title{
+        position: absolute;
+        width: 590px;
+        height: 53px;
+    
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+    
+        color: #191825;
+    }
+    
+    #restaurant-detail{
+        position: absolute;
+        width: 450px;
+        height: 53px;
+        top: 30px;
+    
+        font-family: 'Inter';  
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: justify;
+    
+        color: rgba(25, 24, 37, 0.75);
+    
+        color: #191825;
+    }
+
+    .facilities-title{
+        font-size: 60px;
+    }
+
+    .facilities-segment-2{
+        top: 1500px;
+    }
+
+    #read_more{
+        font-size: 18px;
+    
+        width: 150px;
+        height: 30px;
+        top: 2px;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .restaurant-img{
+        margin-left: 360px;
+    }
+    
+    .restaurant-text{
+        top: 200px;
+        margin-left: 320px;
+    }
+
+    #restaurant-detail{
+        width: 550px;
+    }
+
+    .facilities-fac{
+        top: 590px;
+        height: 540px;
+    }
+
+    .facilities-img{
+        top: 30px;
+        margin-left: 360px;
+    }
+    
+    .facilities-text{
+        margin-left: 360px;
+        top: 240px;
+    }
+
+    #restaurant-1{
+        width: 280px;
+        height: 180px;
+        left: 5px;
+        top: 5px;
+    }
+    
+    #box3{
+        width: 150px;
+        height: 100px;
+        left: 140px;
+    }
+    
+    #box4{
+        width: 150px;
+        height: 100px;
+        left: 0px;
+        top: 90px;
+    }
+    
+    #restaurant-title{
+        position: absolute;
+        width: 590px;
+        height: 53px;
+    
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 120%;
+    
+        color: #191825;
+    }
+    
+    #restaurant-detail{
+        width: 280px;
+        height: 53px;
+        top: 30px;
+        font-size: 12px;
+    }
+
+    .facilities-segment-2{
+        top: 1290px;
+    }
+
+    #read_more{
+        font-size: 15px;
+    
+        width: 130px;
+        height: 25px;
+        top: 2px;
+        left: 150px;
+    }
+}
+
+/* -------------------------------- Footer -------------------------------- */
+
+.footer-segment{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    left: 0px;
+    top: 2450px;
+
+    background: #313131;
+}
+
+#rectangle1{
+    width: 100%;
+    height: 14px;
+    left: 0px;
+    top: 5630px;
+
+    background: rgba(213, 141, 50, 0.5);
+}
+
+#footer-logo{
+    position: absolute;
+    width: 367px;
+    height: 291px;
+    margin-left: -1000px;
+    top: 45px;
+}
+
+.footer-description-1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 70px;
+}
+
+.footer-description-2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 150px;
+}
+
+.footer-description-3{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: -450px;
+    top: 220px;
+}
+
+#footer-location{
+    position: absolute;
+    width: 18px;
+    height: 27px;
+}
+
+#footer-phone{
+    position: absolute;
+    width: 23px;
+    height: 25px;
+}
+
+#footer-email{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+#footer-text{
+    position: absolute;
+    width: 235px;
+    height: 44px;
+    left: 35px;
+    top: 3px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.footer-data-1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 220px;
+    top: 60px;
+}
+
+.footer-data-2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 650px;
+    top: 60px;
+}
+
+.footer-data-3{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-left: 1060px;
+    top: 60px;
+}
+
+#header-data{
+    position: absolute;
+    width: 138px;
+    height: 34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #C6975E;
+}
+
+#footer-data-text-1{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-2{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 110px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-3{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 160px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#footer-data-text-4{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 0px;
+    top: 210px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+#facebook-logo{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: -8px;
+    top: 105px;
+}
+
+#instagram-logo{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 50px;
+    top: 114px;
+}
+
+#youtube-logo{
+    position: absolute;
+    width: 46px;
+    height: 32px;
+    left: 100px;
+    top: 116px;
+}
+
+#twitter-logo{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 160px;
+    top: 113px;
+}
+
+@media screen and (max-width:1300px) {
+    .footer-segment{
+        top: 3640px;
+    }
+}
+@media screen and (max-width:1275px) {
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        margin-left: -830px;
+    }
+    
+    .footer-description-2{
+        margin-left: -830px;
+    }
+    
+    .footer-description-3{
+        margin-left: -830px;
+    }
+/*     
+    #footer-location{
+        position: absolute;
+        width: 18px;
+        height: 27px;
+    }
+    
+    #footer-phone{
+        position: absolute;
+        width: 23px;
+        height: 25px;
+    }
+    
+    #footer-email{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+    } */
+    
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 800px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        margin-left: -830px;
+    }
+    
+    .footer-description-2{
+        margin-left: -830px;
+    }
+    
+    .footer-description-3{
+        margin-left: -830px;
+    }
+/*     
+    #footer-location{
+        position: absolute;
+        width: 18px;
+        height: 27px;
+    }
+    
+    #footer-phone{
+        position: absolute;
+        width: 23px;
+        height: 25px;
+    }
+    
+    #footer-email{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+    } */
+    
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 800px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:1056px) {
+    .footer-segment{
+        height: 550px;
+    }
+    #footer-logo{
+        display: none;
+    }
+
+    .footer-description-1{
+        display: none;
+    }
+    
+    .footer-description-2{
+        display: none;
+    }
+    
+    .footer-description-3{
+        display: none;
+    }
+
+    #footer-text{
+        position: absolute;
+        width: 235px;
+        height: 44px;
+        left: 35px;
+        top: 3px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    
+        color: #FFFFFF;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 60px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 400px;
+        top: 60px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -100px;
+        top: 340px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-segment{
+        top: 2840px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .footer-segment{
+        top: 2420px;
+        height: 450px;
+    }
+    
+    .footer-data-1{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -40px;
+        top: 30px;
+    }
+    
+    .footer-data-2{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: 300px;
+        top: 30px;
+    }
+    
+    .footer-data-3{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-left: -40px;
+        top: 240px;
+    }
+
+    #header-data{
+    font-size: 21px;
+    }
+
+    #footer-data-text-1{
+        top: 40px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-2{
+        top: 75px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-3{
+        top: 115px;
+        font-size: 15px;
+    }
+
+    #footer-data-text-4{
+        top: 155px;
+        font-size: 15px;
+    }
+
+    #facebook-logo{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: -5px;
+        top: 75px;
+    }
+    
+    #instagram-logo{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 35px;
+        top: 80px;
+    }
+    
+    #youtube-logo{
+        position: absolute;
+        width: 30px;
+        height: 23px;
+        left: 73px;
+        top: 81px;
+    }
+    
+    #twitter-logo{
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        left: 115px;
+        top: 78px;
+    }
+}
